@@ -10,7 +10,7 @@ def ask_ai(question):
 
     return response.output_text
 
-print("AI chat started (type 'exit' to quit)\n")
+print("AI chat started (type 'exit' to quit, 'help' for help)\n")
 
 while True:
 
@@ -19,6 +19,9 @@ while True:
     if user_input.lower() == "exit":
         print("Goodbye!")
         break
+
+    if user_input.lower() == "help":
+        print("You can ask me anything about AI, coding, or business.\nType 'exit' to quit.")
 
     answer = ask_ai(user_input)
 
