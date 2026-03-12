@@ -22,6 +22,7 @@ while True:
 
     if user_input.lower() == "help":
         print("You can ask me anything about AI, coding, or business.\nType 'exit' to quit.")
+        continue
 
     answer = ask_ai(user_input)
 
